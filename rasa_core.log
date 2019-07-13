@@ -95,3 +95,284 @@ Traceback (most recent call last):
   File "uvloop/loop.pyx", line 1684, in create_server
   File "uvloop/loop.pyx", line 1116, in uvloop.loop.Loop._create_server
 OSError: [Errno 98] error while attempting to bind on address ('0.0.0.0', 5005): address already in use
+2019-07-13 09:43:47,138 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "uvloop/loop.pyx", line 1112, in uvloop.loop.Loop._create_server
+  File "uvloop/handles/streamserver.pyx", line 58, in uvloop.loop.UVStreamServer.listen
+  File "uvloop/handles/streamserver.pyx", line 95, in uvloop.loop.UVStreamServer._fatal_error
+OSError: [Errno 98] Address already in use
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/server.py", line 745, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "uvloop/loop.pyx", line 1451, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1684, in create_server
+  File "uvloop/loop.pyx", line 1116, in uvloop.loop.Loop._create_server
+OSError: [Errno 98] error while attempting to bind on address ('0.0.0.0', 5005): address already in use
+2019-07-13 09:44:09,541 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "uvloop/loop.pyx", line 1112, in uvloop.loop.Loop._create_server
+  File "uvloop/handles/streamserver.pyx", line 58, in uvloop.loop.UVStreamServer.listen
+  File "uvloop/handles/streamserver.pyx", line 95, in uvloop.loop.UVStreamServer._fatal_error
+OSError: [Errno 98] Address already in use
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/server.py", line 745, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "uvloop/loop.pyx", line 1451, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1684, in create_server
+  File "uvloop/loop.pyx", line 1116, in uvloop.loop.Loop._create_server
+OSError: [Errno 98] error while attempting to bind on address ('0.0.0.0', 5005): address already in use
+2019-07-13 09:44:44,086 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "uvloop/loop.pyx", line 1112, in uvloop.loop.Loop._create_server
+  File "uvloop/handles/streamserver.pyx", line 58, in uvloop.loop.UVStreamServer.listen
+  File "uvloop/handles/streamserver.pyx", line 95, in uvloop.loop.UVStreamServer._fatal_error
+OSError: [Errno 98] Address already in use
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/server.py", line 745, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "uvloop/loop.pyx", line 1451, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1684, in create_server
+  File "uvloop/loop.pyx", line 1116, in uvloop.loop.Loop._create_server
+OSError: [Errno 98] error while attempting to bind on address ('0.0.0.0', 5005): address already in use
+2019-07-13 09:46:18,846 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "uvloop/loop.pyx", line 1112, in uvloop.loop.Loop._create_server
+  File "uvloop/handles/streamserver.pyx", line 58, in uvloop.loop.UVStreamServer.listen
+  File "uvloop/handles/streamserver.pyx", line 95, in uvloop.loop.UVStreamServer._fatal_error
+OSError: [Errno 98] Address already in use
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/server.py", line 745, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "uvloop/loop.pyx", line 1451, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1684, in create_server
+  File "uvloop/loop.pyx", line 1116, in uvloop.loop.Loop._create_server
+OSError: [Errno 98] error while attempting to bind on address ('0.0.0.0', 5005): address already in use
+2019-07-13 10:53:16,062 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/status'
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /status not found
+2019-07-13 11:07:01,648 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/config'
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /config not found
+2019-07-13 11:09:47,673 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/status'
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /status not found
+2019-07-13 11:09:47,944 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/version'
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /version not found
+2019-07-13 11:11:09,811 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/status'
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /status not found
+2019-07-13 13:16:01,556 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/request.py", line 149, in load_json
+    self.parsed_json = loads(self.body)
+ValueError: Unmatched ''"' when when decoding 'string'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/app.py", line 917, in handle_request
+    response = await response
+  File "/home/tuandh/.local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 433, in receive
+    sender_id = await self._extract_sender(request)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 393, in _extract_sender
+    return req.json.get("sender", None)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/request.py", line 143, in json
+    self.load_json()
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/request.py", line 153, in load_json
+    raise InvalidUsage("Failed when parsing body as json")
+sanic.exceptions.InvalidUsage: Failed when parsing body as json
+2019-07-13 14:09:41,302 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/request.py", line 149, in load_json
+    self.parsed_json = loads(self.body)
+ValueError: Unmatched ''"' when when decoding 'string'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/app.py", line 917, in handle_request
+    response = await response
+  File "/home/tuandh/.local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 433, in receive
+    sender_id = await self._extract_sender(request)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 393, in _extract_sender
+    return req.json.get("sender", None)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/request.py", line 143, in json
+    self.load_json()
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/request.py", line 153, in load_json
+    raise InvalidUsage("Failed when parsing body as json")
+sanic.exceptions.InvalidUsage: Failed when parsing body as json
+2019-07-13 14:12:23,031 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/request.py", line 149, in load_json
+    self.parsed_json = loads(self.body)
+ValueError: Unmatched ''"' when when decoding 'string'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/app.py", line 917, in handle_request
+    response = await response
+  File "/home/tuandh/.local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 433, in receive
+    sender_id = await self._extract_sender(request)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 393, in _extract_sender
+    return req.json.get("sender", None)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/request.py", line 143, in json
+    self.load_json()
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/request.py", line 153, in load_json
+    raise InvalidUsage("Failed when parsing body as json")
+sanic.exceptions.InvalidUsage: Failed when parsing body as json
+2019-07-13 14:14:22,039 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhook'
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhook not found
+2019-07-13 14:16:53,114 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhook'
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhook not found
+2019-07-13 14:18:02,670 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhook'
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhook not found
+2019-07-13 14:20:46,726 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhook'
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhook not found
+2019-07-13 14:22:33,834 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhook'
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhook not found
+2019-07-13 14:27:07,031 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhook'
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhook not found
+2019-07-13 15:44:07,971 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/request.py", line 149, in load_json
+    self.parsed_json = loads(self.body)
+ValueError: Unmatched ''"' when when decoding 'string'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/app.py", line 917, in handle_request
+    response = await response
+  File "/home/tuandh/.local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 433, in receive
+    sender_id = await self._extract_sender(request)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 393, in _extract_sender
+    return req.json.get("sender", None)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/request.py", line 143, in json
+    self.load_json()
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/request.py", line 153, in load_json
+    raise InvalidUsage("Failed when parsing body as json")
+sanic.exceptions.InvalidUsage: Failed when parsing body as json
+2019-07-13 17:45:53,753 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/version'
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /version not found
+2019-07-13 17:46:02,673 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/version'
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /version not found
+2019-07-13 18:20:41,746 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/request.py", line 149, in load_json
+    self.parsed_json = loads(self.body)
+ValueError: Unmatched ''"' when when decoding 'string'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/app.py", line 917, in handle_request
+    response = await response
+  File "/home/tuandh/.local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 438, in receive
+    sender_id = await self._extract_sender(request)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 392, in _extract_sender
+    return req.json.get("sender", None)
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/request.py", line 143, in json
+    self.load_json()
+  File "/home/tuandh/.local/lib/python3.6/site-packages/sanic/request.py", line 153, in load_json
+    raise InvalidUsage("Failed when parsing body as json")
+sanic.exceptions.InvalidUsage: Failed when parsing body as json
