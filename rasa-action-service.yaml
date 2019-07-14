@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rasa-action
+spec:
+  selector:
+    app: rasa-action
+  ports:
+  - port: 5055
+    protocol: TCP

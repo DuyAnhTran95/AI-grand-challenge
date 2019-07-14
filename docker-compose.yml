@@ -1,0 +1,18 @@
+version: '3.0'
+services:
+  rasa:
+    image: gcr.io/crazyx/rasa:latest
+    ports:
+    - 5005:5005
+    networks:
+      - backend
+    
+  rasa-action:
+    image: gcr.io/crazyx/action:latest
+    ports:
+    - 5055:5055
+    networks:
+      - backend
+
+networks:
+  backend:

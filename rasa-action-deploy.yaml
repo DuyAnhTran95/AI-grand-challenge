@@ -1,0 +1,20 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: rasa-action
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rasa-action
+  template:
+    metadata:
+      labels:
+        app: rasa-action
+    spec:
+      containers:
+      - name: rasa-action
+        image: gcr.io/crazyx/action:latest
+        ports:
+        - containerPort: 5055
+
