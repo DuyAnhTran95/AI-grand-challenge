@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: rasa-action
-        image: gcr.io/crazyx/action:latest
+        image: gcr.io/crazyx/action:cao
         ports:
         - containerPort: 5055
 
