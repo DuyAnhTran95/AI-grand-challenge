@@ -1,0 +1,20 @@
+2019-07-14 09:57:45,472 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/home/caobo171/.local/lib/python3.6/site-packages/sanic/request.py", line 149, in load_json
+    self.parsed_json = loads(self.body)
+ValueError: Unexpected character in found when decoding object value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caobo171/.local/lib/python3.6/site-packages/sanic/app.py", line 917, in handle_request
+    response = await response
+  File "/home/caobo171/.local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 438, in receive
+    sender_id = await self._extract_sender(request)
+  File "/home/caobo171/.local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 392, in _extract_sender
+    return req.json.get("sender", None)
+  File "/home/caobo171/.local/lib/python3.6/site-packages/sanic/request.py", line 143, in json
+    self.load_json()
+  File "/home/caobo171/.local/lib/python3.6/site-packages/sanic/request.py", line 153, in load_json
+    raise InvalidUsage("Failed when parsing body as json")
+sanic.exceptions.InvalidUsage: Failed when parsing body as json

@@ -1,0 +1,46 @@
+{
+    "beginner":{
+        "toeic":{
+            "url":"http://www.flyhigh.edu.vn/tailieu/11/tai-lieu-luyen-thi-toeic-cho-nguoi-moi-bat-dau",
+            "description":"Cố gắng bạn nhé !! Cái gì khởi đầu cũng khó khăn mà !Mình ngày xưa cũng học tệ lắm"
+        },
+        "ielts":{
+            "url":"http://ielts-fighter.com/supportskill/Bo-tai-lieu-luyen-thi-IELTS-nao-phu-hop-cho-nguoi-moi-bat-dau-Level-4-0-4-5_mt1463654000.html",
+            "description":"IELTS khá khó nhưng đứng nản các bạn nhé !!"
+        },
+        "toefl":{
+            "url":"https://edu2review.com/reviews/lo-trinh-hoc-toefl-cho-nguoi-moi-bat-dau-5124.html",
+            "description":"Bạn xem link này nhé, hì hì, Toefl là hơi khó nhai đó nhen"
+        }
+    },
+
+    "intermediate":{
+        "toeic":{
+            "url":"https://nghetienganhpro.com/tai-lieu-on-thi-toeic-longman-preparation-series-intermediate-course/",
+            "description":"Chắc chắn bộ tài liệu Long Man này dành cho bạn, triển thôi :))"
+        },
+        "ielts":{
+            "url":"https://ielts-share.com/tai-lieu-tu-hoc-ielts-ca-4-ki-nang-cho-moi-trinh-band-4-0-7-0",
+            "description":"Bộ tài liệu này phù hợp cho nhiều band, bạn có thể lựa chọn phù hợp cho bản thân nhé :))"
+        },
+        "toefl":{
+            "url":"https://www.dolenglish.vn/ielts-library/blogs/6-cuon-sach-luyen-thi-toefl-ibt-2019",
+            "description":"Đây là những quyền sách tốt nhất !! Bạn cố gắng lên nhé !!"
+        }
+    },
+
+    "good":{
+        "toeic":{
+            "url":"https://www.anhngumshoa.com/tin-tuc/tat-tan-tat-tai-lieu-tu-hoc-toeic-cho-moi-cap-do-37147.html",
+            "description":"Bạn giỏi thế thì mình nghĩ bạn nên tìm tài liệu học IELTS á !! "
+        },
+        "ielts":{
+            "url":"http://zim.vn/tu-sach-ielts-band-8/",
+            "description":"Bạn thừa sức đọ nó đúng không =))"
+        },
+        "toefl":{
+            "url":"http://oxford.edu.vn/goc-tieng-anh/kinh-nghiem-luyen-thi-toefl/tai-lieu-luyen-thi-toefl-mien-phi-644.html",
+            "description":"Mình thấy cứ tài liệu oxford mà triển thôi "
+        }
+    }
+}

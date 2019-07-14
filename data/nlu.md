@@ -1,9 +1,9 @@
 ## intent:affirm
 - đúng rồi !
-- chính xác là thế 
+- chính xác là thế
 - đúng rồi bot ơi
 - đúng rồi bạn ơi
-- ok 
+- ok
 
 ## intent:chitchat
 - Ê người yêu của mày tên gì vậy
@@ -85,7 +85,7 @@
 - Mình mới[ bắt đầu](level:beginner) học !!
 - Mình [mới học](level:beginner) Tiếng Anh được 2 ngày thôi
 - mình [mới học](level:beginner) tiếng anh thôi
-- Mình mới [bắt đầu học](level) thôi
+- Mình mới [bắt đầu học](level:beginner) thôi
 - Mình[ mới học ](level:beginner)Tiếng Anh được 2 ngày thôi
 - Mình mới [bắt đầu](level:beginner) học được có 7 tuần
 - [450 ](level:beginner)TOEIC nhé
@@ -95,10 +95,32 @@
 - [toeic](type_exam)
 - [TOEFL](type_exam:toefl) nhé
 - [TOEIC](type_exam:toeic) nhé
-- MÌnh mới [bắt đầu](level:beginner) học được 2 ngày thôi 
-- [toeic](type_exam) nhé 
-- mình học cũng lâu rồi, được 2 tháng 
-- mình cũng được tầm 450 Toeic rồi 
+- MÌnh mới [bắt đầu](level:beginner) học được 2 ngày thôi
+- [toeic](type_exam) nhé
+- mình học cũng lâu rồi, được 2 tháng
+- mình cũng được tầm 450 Toeic rồi
+- Mình học ở [Cần thơ](location)
+- Mình sống ở [Hà Nội](location)
+- tôi định cư ở[ Hà Nội](location)
+- tôi ở [Hải phòng](location)
+- tao sống ở [Hài phòng](location)
+- Mình thi ở [Hải phòng](location)
+- Mình thi ở [Đà Nẵng](location)
+- Mình thi ở [TP. Hồ chí minh](location)
+- Mình ở [Hà nội](location)
+- mình mới [bắt đầu](level:beginner) thôi
+- Mình [mới học](level:beginner) được 2 tuần
+- Mình học [bình thường](level:intermediate), không dốt không giỏi
+- Mình học [trung bình](level:intermediate) thôi, không giỏi lắm
+- Mình được có [650](level:intermediate) Toeic thôi à
+- Mình [mới học](level:beginner) được chút xíu
+- Mình được có [650](level) Toeic thôi à 
+- [Hà nội](location)
+- [đà nẵng](location)
+- [hải phòng](location)
+- mình đang ở [Hải phòng](location)
+- Mình đang sống ở [đà nẵng](location)
+- mình làm việc ở [hà nội ](location)
 
 ## intent:request_document
 - Mình muốn tìm tài liệu học Tiếng Anh
@@ -113,33 +135,72 @@
 - Mình vừa thi TOEIC được [500 ](level)điểm và muốn thi [IELTS](type_exam) tiếp
 - Mình muốn tìm nguồn học TIếng ANh bạn ạ
 - Mình muốn thi [IELTS](type_exam) nhưng chưa biết tài liệu nào đáng tin cậy cả !!
-- Mình vẫn chưa biết tìm tài liệu thi [TOEIC](type_exam) ở chỗ nào cả
-- Mình không biết tìm nguồn thi [TOEIC](type_exam) ở đâu
+- Mình vẫn chưa biết tìm tài liệu thi [TOEIC](type_exam:toeic) ở chỗ nào cả
+- Mình không biết tìm nguồn thi [TOEIC](type_exam:toeic) ở đâu
 - Bạn giúp mình tìm tài liệu với
-- Mình cần tài liệu thi[ IELTS](type_exam)
-- Mình muốn tìm tài liệu thi[ IELTS](type_exam)
-- Bot ơi chỉ cho mình tài liệu học [IELTS ](type_exam)các thứ được không
-- Muốn học được [IELTS](type_exam) mà ở level cao ấy ạ, thì làm thế nào ạ !
-- Muốn có tài liệu học [TOEIC](type_exam) thì phải làm thế nào ạ ?
+- Mình cần tài liệu thi [IELTS](type_exam:ielts)
+- Mình muốn tìm tài liệu thi [IELTS](type_exam:ielts)
+- Bot ơi chỉ cho mình tài liệu học [IELTS](type_exam:ielts)các thứ được không
+- Muốn học được [IELTS](type_exam:ielts) mà ở level cao ấy ạ, thì làm thế nào ạ !
+- Muốn có tài liệu học [TOEIC](type_exam:toeic) thì phải làm thế nào ạ ?
 - Mình cần đạt được điểm cao trong kỹ năng reading
-- Mình đang muốn tìm tài liệu để đạt [IELTS ](type_exam)8.0
-- Mình muốn tìm tài liệu [TOEFL](type_exam) một cách rất chi là hiệu quả
-- Mình muốn tìm nguồn học [TOEFL](type_exam) hiệu quả
-- Mình cần học để đạt [TOEIC](type_exam) 800
-- Mình vừa mới thi [IELTS](type_exam) được [7.0](level), mình muốn tìm tài liệu để lên 8.0 ấy !
-- Mình muốn tìm tài liệu học [TOEIC](type_exam) ấy
+- Mình đang muốn tìm tài liệu để đạt [IELTS](type_exam:ielts) 8.0
+- Mình muốn tìm tài liệu [TOEFL](type_exam:toefl) một cách rất chi là hiệu quả
+- Mình muốn tìm nguồn học [TOEFL](type_exam:toefl) hiệu quả
+- Mình cần học để đạt [TOEIC](type_exam:toeic) 800
+- Mình vừa mới thi [IELTS](type_exam:ielts) được [7.0](level:good), mình muốn tìm tài liệu để lên 8.0 ấy !
+- Mình muốn tìm tài liệu học [TOEIC](type_exam:toeic) ấy
 - Mình muốn học [Toeic](type_exam:toeic)
 - Mình muốn học Tiếng Anh
-- Mình muốn tìm tài liệu học [TOEIC](type_exam) ấy
-- Mình cần tìm tài liệu về [IELTS ](type_exam)
-- Bot ơi chỉ cho mình tài liệu học [IELTS ](type_exam)các thứ được không
+- Mình muốn tìm tài liệu học [TOEIC](type_exam:toeic) ấy
+- Mình cần tìm tài liệu về [IELTS ](type_exam:ielts)
+- Bot ơi chỉ cho mình tài liệu học [IELTS ](type_exam:ielts)các thứ được không
 - Mình cần đạt được điểm cao trong kỹ năng reading
-- Mình đang muốn tìm tài liệu để đạt [IELTS](type_exam) 8.0
-- Cháu của mình vẫn đang vất vả học [TOEIC](type_exam), chưa biết bắt đầu từ đâu
-- Mình vừa thi TOEIC được[ 500](level) điểm và muốn thi [IELTS](type_exam) tiếp
+- Mình đang muốn tìm tài liệu để đạt [IELTS](type_exam:ielts) 8.0
+- Cháu của mình vẫn đang vất vả học [TOEIC](type_exam:toeic), chưa biết bắt đầu từ đâu
+- Mình vừa thi TOEIC được[ 500](level:intermediate) điểm và muốn thi [IELTS](type_exam:ielts) tiếp
 - Bạn giúp mình tìm tài liệu với
-- Bạn chỉ cho mình tài liệu học TOEIC được không 
-- Mình muốn học [Toeic](type_exam:toeic) ấy thì tìm tài liệu ở đâu nhỉ 
+- Bạn chỉ cho mình tài liệu học TOEIC được không
+- Mình muốn học [Toeic](type_exam:toeic) ấy thì tìm tài liệu ở đâu nhỉ
+- Mình muốn tìm địa điểm thi [IELTS](type_exam:ielts) ở [Hà nội](location)
+- Bạn chỉ mình cách để thi [TOEFL](type_exam:toefl) với !
+- Mình muốn tìm địa chỉ để thi[ toefl](type_exam) bạn ơi !
+- Mình muốn tìm địa điểm thi [IELTS](type_exam:ielts) ở [Hà nội ](location)
+
+## intent:request_location
+- MÌnh muốn tìm địa điểm thi [IELTS ](type_exam:ielts)
+- Bạn chỉ cho mình lịch thi [ielts](type_exam) ở [Đà Nẵng](location) được không
+- Mình cần biết lịch thi của kì thi [toeic](type_exam)
+- Mình vẫn chưa biết thi [Toefl](type_exam:toefl) như thế nào ấy ?
+- Mình không biết lịch thi [Toeic](type_exam:toeic) như thế nào !
+- Flinkgo ơi ơi, cho mình biết địa điểm thi [ielts](type_exam)
+- Ê bot cho mình xin địa điểm thi nhé !
+- Ê bot, chỉ mình lịch thi nhé !! 
+- Ê bot , cho mình lịch thi [Toefl](type_exam:toefl) đi 
+- Ê flinkgo, chỉ mình địa điểm và lịch thi [ielts](type_exam) được không ?
+- bạn ơi, mình chưa biết lúc nào diễn ra kỳ thi [Ielts](type_exam)
+- Bạn cho mình xin lịch thi [IELts](type_exam) nhé 
+- Bạn ơi chỉ cho mình chỗ thi [IELTs](type_exam) đi !! 
+- chỉ tao chỗ thi [IELTS](type_exam:ielts) cái !
+- Bạn chỉ cho mình chỗ nào để thi [TOEIC](type_exam:toeic) với'
+- Bạn mách mình địa điểm thi tiếng Anh được không ??
+- Bạn chỉ mình địa điểm thi với !
+- Ê thi [toeic](type_exam) ở [Đà nẵng](location) chỗ nào vậy Flinkgo
+- Ê thi [ielts](type_exam) ở [hải phòng](location) thì bao giờ thi nhỉ Flinkgo
+- Thi [toeic](type_exam) chỗ nào ở [Hà](location)[Hà Nội](location) flinkgo nhỉ ?
+- Mình thi [Ielts](type_exam) chỗ nào Flinkgo nhỉ ?
+- Bao giờ thì mình thi [ielts](type_exam) nhỉ ?
+- Bao giờ thì mình sẽ thi [toeic](type_exam)
+- Thi [toefl](type_exam) bao giờ nhỉ bot 
+- Thi [toefl](type_exam) ở đâu nhỉ Flinkgo
+- Mình cần biết địa điểm thi [ielts](type_exam) bot ơi
+- Mình cần biết địa điểm thi [toeic](type_exam) cậu ơi !!
+- Bạn chỉ cho mình lịch thi [ielts](type_exam) ở [Đà Nẵng](location) được không 
+- bao giờ thi [ielts](type_exam) thì báo mình nhé !!
+- Bao giờ thi [toeic](type_exam) thì báo mình nhé
+- địa điểm thi [ielts](type_exam) ở đâu ấy nhỉ ??
+- địa điểm thi [ielts](type_exam) ở [Hà nội](location) chỗ nào vậy flinkgo 
+- Cho mình xin địa điểm thi nhé !!
 
 ## intent:stop
 - Thôi đi mày chả giúp được gì tao cả
@@ -158,6 +219,7 @@
 - gà lắm
 -  bắt đầu
 - mới học
+- bắt đầu học
 -  mới học 
 - 2 ngày
 - 450
@@ -176,10 +238,15 @@
 ## synonym:intermediate
 - 6 tháng
 -  một khoảng thời gian
+- bình thường
+- trung bình
+- 650
+-  500
 - một khoảng thời gian
 
 ## synonym:toefl
 - TOEFL
+- Toefl
 
 ## synonym:toeic
 - TOEIC

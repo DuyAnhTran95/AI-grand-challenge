@@ -9,6 +9,128 @@
 * thankyou
     - utter_noworries
 
+
+## happy path 7
+* greet
+    - utter_greet
+* request_document
+    - document_form
+    - form{"name": "document_form"}
+    - form{"name": null}
+    - utter_ask_continue
+* affirm
+    - utter_greet
+* request_location
+    - location_form
+    - form{"name": "location_form"}
+    - form{"name": null}
+    - utter_ask_continue
+* deny 
+    - utter_submit
+* thankyou
+    - utter_noworries
+
+## happy path 8
+* greet
+    - utter_greet
+* request_location
+    - location_form
+    - form{"name": "location_form"}
+    - form{"name": null}
+    - utter_ask_continue
+* affirm
+    - utter_greet
+* request_document
+    - document_form
+    - form{"name": "document_form"}
+    - form{"name": null}
+    - utter_ask_continue
+* deny 
+    - utter_submit
+* thankyou
+    - utter_noworries
+
+## happy path location
+* greet
+    - utter_greet
+* request_location
+    - location_form
+    - form{"name": "location_form"}
+    - form{"name": null}
+    - utter_slots_values
+* thankyou
+    - utter_noworries
+
+## happy path 2
+* greet
+    - utter_greet
+* request_document{"type_exam":"toeic"}
+    - document_form
+    - form{"name": "document_form"}
+    - form{"name": null}
+    - utter_slots_values
+* thankyou
+    - utter_noworries
+
+## happy path 2 location
+* greet
+    - utter_greet
+* request_location{"type_exam":"toeic"}
+    - location_form
+    - form{"name": "location_form"}
+    - form{"name": null}
+    - utter_slots_values
+* thankyou
+    - utter_noworries
+
+## happy path 3
+* request_document{"type_exam":"ielts", "level":"beginner"}
+    - document_form
+    - form{"name":"document_form"}
+    - form{"name":null}
+    - utter_slots_values
+* thankyou
+    - utter_noworries
+
+## happy path 4 location
+* request_document
+    - document_form
+    - form{"name":"document_form"}
+    - form{"name":null}
+* thankyou
+    - utter_noworries
+
+
+
+## happy path 3 location
+* request_location{"type_exam":"ielts", "location":"hà nội"}
+    - location_form
+    - form{"name":"location_form"}
+    - form{"name":null}
+    - utter_slots_values
+* thankyou
+    - utter_noworries
+
+
+## happy path 4 locaiton 
+* request_location
+    - location_form
+    - form{"name":"location_form"}
+    - form{"name":null}
+* thankyou
+    - utter_noworries
+
+## happy path 5 locaiton
+* request_location{"location":"hà nội"}
+    - location_form
+    - form{"name":"location_form"}
+    - form{"name":null}
+* thankyou
+    - utter_noworries
+
+
+
+
 ## unhappy path
 * greet
     - utter_greet
@@ -22,6 +144,22 @@
     - utter_slots_values
 * thankyou
     - utter_noworries
+
+
+## unhappy path location
+* greet
+    - utter_greet
+* request_location
+    - location_form
+    - form{"name": "location_form"}
+* chitchat
+    - utter_chitchat
+    - location_form
+    - form{"name": null}
+    - utter_slots_values
+* thankyou
+    - utter_noworries
+
 
 ## very unhappy path
 * greet
@@ -186,12 +324,3 @@
     - slot{"requested_slot":null}
     - utter_slots_values
 
-## New Story
-
-* request_document{"type_exam":"toeic"}
-    - document_form
-    - slot{"requested_slot":"level"}
-* inform
-    - action_default_fallback
-* inform
-    - action_default_fallback
