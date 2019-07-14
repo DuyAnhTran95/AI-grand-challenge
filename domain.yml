@@ -1,0 +1,56 @@
+intents:
+- affirm
+- chitchat:
+    use_entities: []
+- deny
+- greet
+- inform
+- request_document:
+    use_entities: []
+- stop
+- thankyou
+entities:
+- level
+- type_exam
+slots:
+  level:
+    type: unfeaturized
+    auto_fill: false
+  requested_slot:
+    type: unfeaturized
+  type_exam:
+    type: unfeaturized
+    auto_fill: false
+templates:
+  utter_ask_level:
+  - text: Bạn học Tiếng Anh đến mức nào rồi ?
+  utter_ask_type_exam:
+  - text: Bạn định thi dạng nào ( TOEIC, TOEFL, IELTS) ?
+  utter_submit:
+  - text: All done!
+  utter_slots_values:
+  - text: "Mình confirm lại tí nhé!! Bạn đang muốn thi {type_exam}\n và đang ở mức\
+      \ {level} đúng không ??\n "
+  utter_noworries:
+  - text: Bạn thoải mái đi :), bạn bè với nhau cả !!
+  utter_chitchat:
+  - text: Mình chịu, mình hổng giỏi chat !
+  utter_ask_continue:
+  - text: Bạn có muốn tiếp tục không ?
+  utter_wrong_level:
+  - text: Bạn trả lời chưa đúng trọng tâm rồi, bạn trả lời lại được không ?
+  utter_wrong_type_exam:
+  - text: Bạn trả lời lại được không ? Bạn thi TOEIC, IELTS hay TOEFL nhỉ !! Mình
+      chưa hiểu lắm ?
+  utter_default:
+  - text: 'Xin lỗi, mình chưa hiểu được ý bạn '
+  utter_greet:
+  - text: Xin chào bạn ! Mình là Flinkgo ! Bạn muốn mình giúp gì không ?
+actions:
+- utter_ask_continue
+- utter_chitchat
+- utter_greet
+- utter_noworries
+- utter_slots_values
+forms:
+- document_form
